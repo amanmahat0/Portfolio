@@ -69,3 +69,12 @@ a,button{ -webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-v
 .project:hover{background:var(--surface)}.marquee i{color:var(--text-muted)}.story-index,.story-intro h2 span,.devfest-stats b,.source-note a,.award i,.award-stamp i{color:var(--text-secondary)}.source-note a:hover{color:var(--accent-soft)}.contact .eyebrow{color:var(--text-secondary)}.gallery-placeholder:before{color:rgba(245,245,245,.12)}.project:focus-within{border-color:var(--accent-border)}.project-context b{color:var(--text-primary)}
 .wordmark i,.asterisk,.hero .eyebrow,.leadership-link>span,.leadership-list article>i,.timeline .company-group>b,.photo-hint b,.story-kicker{color:var(--text-secondary)}.topbar nav a[aria-current="location"]:after{background:var(--accent)}
 .profile-frame:hover .profile-photo{filter:grayscale(0);transform:scale(1.035)}
+
+.certification-card{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;padding:clamp(28px,5vw,64px);background:var(--surface);border:1px solid var(--border)}
+.certification-card h2{font:600 clamp(36px,6vw,72px)/.98 var(--display);letter-spacing:-.06em;color:var(--text-primary);margin:18px 0}
+.certification-card h2 span{color:var(--text-secondary)}
+.certification-card p{color:var(--text-secondary);font-size:14px;line-height:1.7;margin:0}
+.certification-link{display:inline-flex;align-items:center;gap:24px;flex-shrink:0;padding:15px 18px;border:1px solid var(--border);color:var(--text-primary);text-decoration:none;font:9px var(--mono);letter-spacing:.06em;transition:border-color .2s,color .2s,background .2s}
+.certification-link b{color:var(--accent-soft);font-size:15px}
+.certification-link:hover{border-color:var(--accent-border);background:var(--surface-card);color:var(--accent-soft)}
+@media(max-width:620px){.certification-card{align-items:flex-start;flex-direction:column}.certification-link{width:100%;justify-content:space-between}}
